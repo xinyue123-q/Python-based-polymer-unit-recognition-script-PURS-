@@ -55,8 +55,13 @@ def smallest(cp_arr,index_arr):
             smallest_list.append(i)
     return(smallest_list)
 
+def link_c(string):
+    num_list=['1','2','3','4','5','6','7','8','9','%']
+    if len(string)>1:
+        if string[0]=="C" and string[1] in num_list:
+            string="C"+string
+    return(string)
 
-# In[ ]:
 
 
 def found_independent_ring_in_same_str2(string_list):
